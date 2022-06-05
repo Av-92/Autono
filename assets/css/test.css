@@ -1,0 +1,296 @@
+* 
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+  }
+      
+body {
+  background-color: white;
+}
+      
+.header_1 {
+  height: 89px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 60px;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  right: 0;
+  left: 0;
+}
+      
+.site-name {
+  font-size: 20px;
+  letter-spacing: 5px;
+  font-weight: 600;
+}
+      
+.header-link-container {
+  width: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+      
+.header-link {
+  transition-duration: 0.3s;
+}
+  
+.header-link:hover {
+  color: red;
+}
+      
+.header-btn {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  width: 80px; /*header i width qcahnuma vor texavorvi ira texum*/
+  height: 32px;
+  border: 1px solid black;
+  transition-duration: 0.3s;
+ }
+      
+.header-btn:hover {
+  background-color: white;
+  color: black;
+}
+    
+.header-link a {
+  text-decoration: none;
+  color: black;
+}
+    
+.header-link a:hover {
+  color: red;
+  transition-duration: 0.3s;
+}
+  
+.site-name a {
+  text-decoration: none;
+  color: black;
+}
+  
+  .site-name a:hover {
+  color: red;
+  transition-duration: 0.3s;
+}
+
+ .wrapper {
+  /* margin: 200px auto; */
+  width: 200px; /*es darcnum em 200ic 100px vor normal texavorvi ekrani laynqi mej*/
+  background-color: white;
+  position: relative;
+  color: black;
+  text-align: center;
+  height: 40px;
+}
+
+#check-menu {
+  display: none;
+}
+
+label {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 2;
+  line-height: 40px;
+  
+}
+
+.burger-line {
+  position: absolute;
+  margin-top: 10px;
+  width: 30px;
+  height: 2px;
+  background-color: black;
+  right: 20px;
+}
+
+.second, .third {
+  top: 10px;
+}
+
+.fourth {
+  top: 28px;
+}
+
+.main-menu {
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  max-height: 0;
+  font-size: 0;
+  overflow: hidden;
+  max-height: 0;
+  font-size: 0;
+  overflow: hidden;
+  transition: 0.5s all;
+}
+
+a {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  /* border-top: 1px solid ; dursa galis es funkcian vor verevi gcery durs gan*/
+  background-color: white;
+}
+
+#check-menu:checked ~ .main-menu {
+  max-height: 500px;
+  font-size: 16px;
+} 
+
+#check-menu:checked ~ .first {
+  display: none;
+}
+
+#check-menu:checked ~ .second {
+  transform: rotate(45deg);
+}
+
+#check-menu:checked ~ .third {
+  transform: rotate(-45deg);
+}
+
+#check-menu:checked ~ .fourth {
+  display: none;
+}
+
+.logo-responcive {  
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  height: 780px;
+  margin-top: 350px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  height: 300px;
+    
+}
+
+.logo_1 {  
+  position: relative;
+  animation-name: logo_1;
+  animation-duration: 4.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes logo_1 {
+  0% {
+    bottom: -170px;
+  }
+
+  100% {
+    bottom: 0px;
+  }
+}
+
+.logo_2 { 
+  position: relative;
+  animation-name: logo_2;
+  animation-duration: 7s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes logo_2 {
+  0% {
+    bottom: -170px;
+  }
+
+  100% {
+    bottom: 0px;
+  }
+}
+
+.logo_3 {
+  position: relative;
+  animation-name: logo_3;
+  animation-duration: 9s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes logo_3 {
+  0% {
+    bottom: -170px;
+  }
+
+  100% {
+    bottom: 0px;
+  }
+}
+
+.logo_4 {
+  position: relative;
+  animation-name: logo_4;
+  animation-duration: 11s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes logo_4 {
+  0% {
+    bottom: -170px;
+  }
+
+  100% {
+    bottom: 0px;
+  }
+}
+
+.logo_6 {
+  position: relative;
+  animation-name: logo_6;
+  animation-duration: 12s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes logo_6 {
+  0% {
+    bottom: -170px;
+  }
+
+  100% {
+    bottom: 30px;
+  }
+}
+
+.logo-container {
+  display: flex;
+  justify-content: space-between;
+  width: 370px;
+}
+
+.logo-responcive {
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  height: 400px;
+  margin-top: 350px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo_6 {
+  margin-right: 225px;
+}
+
+
